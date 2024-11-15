@@ -1,0 +1,192 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-repeat: no-repeat;
+    background: linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.navbar.scrolled a {
+  color: rgb(155, 49, 255);
+}
+.navbar.scrolled a:hover {
+  color: rgb(208, 157, 255);
+}
+.col-sm-4 {
+    width: 80%;
+    height: 380px;
+    overflow: hidden;
+}
+.col-sm-4 img {
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.col-sm-4 img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+.about {
+    background: linear-gradient(#ffff 30%, rgb(219, 172, 195) 60%, #e33f6000 100%);
+    padding:3% 0 20% 0;
+}
+.card-animasi :hover{
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  box-shadow: 0 0 5px #eb859992,
+    0 0 20px #eb859992,0 0 40px #eb859992,
+    0 0 80px #eb859992, 0 0 120px #eb859992;
+}
+
+/* .animasi {
+  position: relative;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+  transform: translateY(47%);
+  transition: 0.3s;
+} */
+.service {
+    background: linear-gradient(#ffff 30%, rgb(224, 203, 203) 60%, #e33f6000 100%);
+}
+.icon img{
+  height: 40%;
+  /* animation: bottom infinite ease-out 4s; */
+  /* filter: invert(100%); */
+  /* filter: grayscale(100%); */
+  transition: 2.5s;
+  cursor: pointer;
+}
+/* @keyframes bottom {
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-50px);}
+  100%{transform: translateY(0);}
+} */
+.icon img:hover {
+  transform: rotateY(360deg);
+  /* filter: grayscale(0%); */
+  filter: invert(100%);
+}
+
+/* .button {
+    background-color: white; 
+    border-radius: 10px;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+} */
+.button {
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0 0 5px white,
+  0 0 25 white;
+}
+
+.button:hover {
+    margin-top: 3px;
+    background-color: white;
+    box-shadow: 0 0 5px white,
+    0 0 25px white, 0 0 50px white,
+    0 0 100px white, 0 0 200px white;
+}
+
+/* Icon */
+.container.ikon {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  .container.ikon ul {
+      display: flex;
+      position: absolute;
+      /* top: 50%; */
+      bottom: 20px;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+  .container.ikon ul li {
+      list-style: none;
+    }
+  .container.ikon ul li a {
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 80px;
+      font-size: 35px;
+      margin: 0 10px;
+      display: block;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #fff;
+      z-index: 1;
+    } 
+  .container.ikon ul li a .icon {
+      position: relative;
+      color: #262626;
+      transition: .5s;
+      z-index: 3;
+    }
+    
+  .container.ikon ul li a:hover .icon {
+      color: #fff;
+      transform: rotateY(360deg);
+    }
+    
+  .container.ikon ul li a:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #f00;
+      transition: .5s;
+      z-index: 2;
+    }
+    
+  .container.ikon ul li a:hover:before {
+      top: 0;
+    }
+    
+  .container.ikon ul li:nth-child(1) a:before{
+      background: #3b5999;
+    }
+    
+  .container.ikon ul li:nth-child(2) a:before{
+      background: #55acee;
+    }
+    
+  .container.ikon ul li:nth-child(3) a:before {
+      background: #bb001b;
+    }
+    
+  .container.ikon ul li:nth-child(4) a:before {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+                  radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+                       radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                         radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+                           radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                             radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+                               linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);  }
+  
+section {
+    padding-top: 5rem;
+}
+/* .button{
+    transition: all ease-in-out 0.5s;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+}
+.button :hover{
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan,0 0 50px cyan,
+  0 0 100px cyan, 0 0 200px cyan;
+} */
